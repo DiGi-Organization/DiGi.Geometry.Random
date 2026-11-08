@@ -29,13 +29,13 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Spatial.Classes.Polygon3D" /> within the specified <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" />.
+        /// Generates a random <see cref="DiGi.Geometry.Spatial.Classes.Polygon3D" /> within the specified <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" />.
         /// </summary>
-        /// <param name="boundingBox3D">The <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for the polygon generation.</param>
+        /// <param name="boundingBox3D">The <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for the polygon generation.</param>
         /// <param name="pointCount">The number of vertices to be generated for the resulting polygon.</param>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used to ensure randomness in plane selection and point placement.</param>
-        /// <param name="tolerance">The double value specifying the geometric tolerance, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.Polygon3D" /> instance if a valid polygon could be generated; otherwise, <c>null</c>.</returns>
+        /// <param name="random">The <see cref="System.Random" /> instance used to ensure randomness in plane selection and point placement.</param>
+        /// <param name="tolerance">The double value specifying the geometric tolerance, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.Polygon3D" /> instance if a valid polygon could be generated; otherwise, <c>null</c>.</returns>
         public static Polygon3D? Polygon3D(BoundingBox3D? boundingBox3D, int pointCount, System.Random random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox3D == null || random == null)

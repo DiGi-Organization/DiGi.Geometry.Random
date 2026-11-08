@@ -118,12 +118,12 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> within the bounds of the specified <see cref="IPolygonal2D" /> geometry.
+        /// Generates a random <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> within the bounds of the specified <see cref="IPolygonal2D" /> geometry.
         /// </summary>
         /// <param name="polygonal2D">The <see cref="IPolygonal2D" /> geometry used as the sampling area.</param>
         /// <param name="random">The <see cref="System.Random" /> instance used to generate random coordinates.</param>
-        /// <param name="tolerance">The <see cref="double" /> tolerance value for geometric operations, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A randomly sampled <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> if a point could be determined; otherwise, <c>null</c>.</returns>
+        /// <param name="tolerance">The <see cref="double" /> tolerance value for geometric operations, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A randomly sampled <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> if a point could be determined; otherwise, <c>null</c>.</returns>
         public static Point2D? Point2D(IPolygonal2D? polygonal2D, System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (polygonal2D == null || random == null)
@@ -201,12 +201,12 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> located on the specified <see cref="T:DiGi.Geometry.Planar.Classes.Segment2D" />.
+        /// Generates a random <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> located on the specified <see cref="DiGi.Geometry.Planar.Classes.Segment2D" />.
         /// </summary>
-        /// <param name="segment2D">The <see cref="T:DiGi.Geometry.Planar.Classes.Segment2D" /> from which to sample a random point.</param>
+        /// <param name="segment2D">The <see cref="DiGi.Geometry.Planar.Classes.Segment2D" /> from which to sample a random point.</param>
         /// <param name="random">The <see cref="System.Random" /> instance used to generate the random coordinates.</param>
-        /// <param name="tolerance">The <see cref="double" /> distance tolerance used to determine if the segment is vertical or horizontal, defaulting to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A randomly sampled <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> on the <paramref name="segment2D" />, or <see langword="null" /> if the <paramref name="segment2D" /> is null, the <paramref name="random" /> instance is null, or the segment length is smaller than the specified <paramref name="tolerance" />.</returns>
+        /// <param name="tolerance">The <see cref="double" /> distance tolerance used to determine if the segment is vertical or horizontal, defaulting to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A randomly sampled <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> on the <paramref name="segment2D" />, or <see langword="null" /> if the <paramref name="segment2D" /> is null, the <paramref name="random" /> instance is null, or the segment length is smaller than the specified <paramref name="tolerance" />.</returns>
         public static Point2D? Point2D(Segment2D? segment2D, System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (segment2D == null || random == null)
@@ -251,12 +251,12 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> located within the boundaries of the specified <see cref="T:DiGi.Geometry.Planar.Classes.PolygonalFace2D" />.
+        /// Generates a random <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> located within the boundaries of the specified <see cref="DiGi.Geometry.Planar.Classes.PolygonalFace2D" />.
         /// </summary>
-        /// <param name="polygonalFace2D">The <see cref="T:DiGi.Geometry.Planar.Classes.PolygonalFace2D" /> from which to sample a random point.</param>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used to generate the random coordinates.</param>
-        /// <param name="tolerance">The <see cref="T:System.Double" /> tolerance value used for geometric validation and intersection tests.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Planar.Classes.Point2D" /> that is inside the <paramref name="polygonalFace2D" />, or <see langword="null" /> if the <paramref name="polygonalFace2D" /> or <paramref name="random" /> are null, or if the face's bounding box dimensions are smaller than the specified <paramref name="tolerance" />.</returns>
+        /// <param name="polygonalFace2D">The <see cref="DiGi.Geometry.Planar.Classes.PolygonalFace2D" /> from which to sample a random point.</param>
+        /// <param name="random">The <see cref="System.Random" /> instance used to generate the random coordinates.</param>
+        /// <param name="tolerance">The <see cref="System.Double" /> tolerance value used for geometric validation and intersection tests.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Planar.Classes.Point2D" /> that is inside the <paramref name="polygonalFace2D" />, or <see langword="null" /> if the <paramref name="polygonalFace2D" /> or <paramref name="random" /> are null, or if the face's bounding box dimensions are smaller than the specified <paramref name="tolerance" />.</returns>
         public static Point2D? Point2D(PolygonalFace2D? polygonalFace2D, System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (polygonalFace2D == null || random == null)

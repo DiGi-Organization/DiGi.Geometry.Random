@@ -7,12 +7,12 @@ namespace DiGi.Geometry.Spatial.Random
     public static partial class Create
     {
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Spatial.Classes.Point3D" /> within the specified <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" />.
+        /// Generates a random <see cref="DiGi.Geometry.Spatial.Classes.Point3D" /> within the specified <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" />.
         /// </summary>
-        /// <param name="boundingBox3D">The <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the boundaries for generating the point.</param>
+        /// <param name="boundingBox3D">The <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the boundaries for generating the point.</param>
         /// <param name="seed">An <see cref="System.Int32" /> value used to seed the random number generator.</param>
-        /// <param name="tolerance">A <see cref="System.Double" /> value representing the distance tolerance, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.Point3D" /> located within the <paramref name="boundingBox3D" />, or <see langword="null" /> if the <paramref name="boundingBox3D" /> is <see langword="null" />.</returns>
+        /// <param name="tolerance">A <see cref="System.Double" /> value representing the distance tolerance, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.Point3D" /> located within the <paramref name="boundingBox3D" />, or <see langword="null" /> if the <paramref name="boundingBox3D" /> is <see langword="null" />.</returns>
         public static Point3D? Point3D(BoundingBox3D? boundingBox3D, int seed = -1, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox3D == null)

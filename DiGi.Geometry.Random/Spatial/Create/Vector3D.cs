@@ -19,11 +19,11 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Generates a random unit <see cref="T:DiGi.Geometry.Spatial.Classes.Vector3D" /> by creating a random vector and ensuring its length exceeds the specified <paramref name="tolerance" /> before normalization.
+        /// Generates a random unit <see cref="DiGi.Geometry.Spatial.Classes.Vector3D" /> by creating a random vector and ensuring its length exceeds the specified <paramref name="tolerance" /> before normalization.
         /// </summary>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used to generate the random components of the vector. If this <see cref="T:System.Random" /> is null, the method returns null.</param>
-        /// <param name="tolerance">A <see cref="T:System.Double" /> value specifying the minimum length threshold that the generated vector must meet before it can be normalized. The default value is <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A unit <see cref="T:DiGi.Geometry.Spatial.Classes.Vector3D" /> representing a random direction, or null if the <paramref name="random" /> instance is null.</returns>
+        /// <param name="random">The <see cref="System.Random" /> instance used to generate the random components of the vector. If this <see cref="System.Random" /> is null, the method returns null.</param>
+        /// <param name="tolerance">A <see cref="System.Double" /> value specifying the minimum length threshold that the generated vector must meet before it can be normalized. The default value is <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A unit <see cref="DiGi.Geometry.Spatial.Classes.Vector3D" /> representing a random direction, or null if the <paramref name="random" /> instance is null.</returns>
         public static Vector3D? Vector3D(System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (random == null)

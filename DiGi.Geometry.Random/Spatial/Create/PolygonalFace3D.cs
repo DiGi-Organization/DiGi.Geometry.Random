@@ -8,13 +8,13 @@ namespace DiGi.Geometry.Spatial.Random
     public static partial class Create
     {
         /// <summary>
-        /// Creates a <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> within the specified <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> using a random seed and tolerance.
+        /// Creates a <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> within the specified <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> using a random seed and tolerance.
         /// </summary>
-        /// <param name="boundingBox3D">The <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial bounds for the face generation.</param>
+        /// <param name="boundingBox3D">The <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial bounds for the face generation.</param>
         /// <param name="pointCount">The <see cref="System.Int32" /> number of points to be used in the creation of the polygonal face.</param>
         /// <param name="seed">The <see cref="System.Int32" /> seed value for the random number generator.</param>
-        /// <param name="tolerance">The <see cref="System.Double" /> tolerance value, defaulting to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />, used for geometric calculations.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> if the <paramref name="boundingBox3D" /> is not null; otherwise, null.</returns>
+        /// <param name="tolerance">The <see cref="System.Double" /> tolerance value, defaulting to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />, used for geometric calculations.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> if the <paramref name="boundingBox3D" /> is not null; otherwise, null.</returns>
         public static PolygonalFace3D? PolygonalFace3D(BoundingBox3D? boundingBox3D, int pointCount, int seed = -1, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox3D == null)
@@ -28,13 +28,13 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> within the specified bounding box.
+        /// Generates a random <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> within the specified bounding box.
         /// </summary>
-        /// <param name="boundingBox3D">The <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for generating the face.</param>
-        /// <param name="pointCount">The <see cref="T:System.Int32" /> number of points to be used in the generation of the polygons.</param>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used for stochastic generation.</param>
-        /// <param name="tolerance">The <see cref="T:System.Double" /> distance tolerance for geometric operations, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A randomly generated <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> instance if the generation is successful; otherwise, <c>null</c>.</returns>
+        /// <param name="boundingBox3D">The <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for generating the face.</param>
+        /// <param name="pointCount">The <see cref="System.Int32" /> number of points to be used in the generation of the polygons.</param>
+        /// <param name="random">The <see cref="System.Random" /> instance used for stochastic generation.</param>
+        /// <param name="tolerance">The <see cref="System.Double" /> distance tolerance for geometric operations, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A randomly generated <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> instance if the generation is successful; otherwise, <c>null</c>.</returns>
         public static PolygonalFace3D? PolygonalFace3D(BoundingBox3D? boundingBox3D, int pointCount, System.Random random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox3D == null || random == null)
@@ -117,15 +117,15 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Creates a <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> based on the specified X, Y, and Z ranges.
+        /// Creates a <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> based on the specified X, Y, and Z ranges.
         /// </summary>
-        /// <param name="x">The <see cref="T:DiGi.Core.Classes.Range`1" /> defining the extent of the X-axis.</param>
-        /// <param name="y">The <see cref="T:DiGi.Core.Classes.Range`1" /> defining the extent of the Y-axis.</param>
-        /// <param name="z">The <see cref="T:DiGi.Core.Classes.Range`1" /> defining the extent of the Z-axis.</param>
+        /// <param name="x">The <see cref="DiGi.Core.Classes.Range{T}" /> defining the extent of the X-axis.</param>
+        /// <param name="y">The <see cref="DiGi.Core.Classes.Range{T}" /> defining the extent of the Y-axis.</param>
+        /// <param name="z">The <see cref="DiGi.Core.Classes.Range{T}" /> defining the extent of the Z-axis.</param>
         /// <param name="pointCount">The integer number of points to generate for the polygonal face.</param>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used for randomizing point positions.</param>
-        /// <param name="tolerance">The double value specifying the tolerance for geometric operations, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> if <paramref name="x" />, <paramref name="y" />, <paramref name="z" />, and <paramref name="random" /> are not null; otherwise, null.</returns>
+        /// <param name="random">The <see cref="System.Random" /> instance used for randomizing point positions.</param>
+        /// <param name="tolerance">The double value specifying the tolerance for geometric operations, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.PolygonalFace3D" /> if <paramref name="x" />, <paramref name="y" />, <paramref name="z" />, and <paramref name="random" /> are not null; otherwise, null.</returns>
         public static PolygonalFace3D? PolygonalFace3D(Range<double>? x, Range<double>? y, Range<double>? z, int pointCount, System.Random random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (x == null || y == null || z == null || random == null)

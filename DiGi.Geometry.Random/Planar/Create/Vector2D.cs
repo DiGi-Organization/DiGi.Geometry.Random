@@ -19,11 +19,11 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a random unit <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> by iteratively creating vectors until the length exceeds the specified <paramref name="tolerance" />.
+        /// Generates a random unit <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> by iteratively creating vectors until the length exceeds the specified <paramref name="tolerance" />.
         /// </summary>
-        /// <param name="random">The <see cref="T:System.Random" /> instance used to generate random values.</param>
-        /// <param name="tolerance">The minimum length threshold that a generated vector must exceed before being normalized, defaulting to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A unit <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> representing the normalized direction of the generated vector, or <see langword="null" /> if the <paramref name="random" /> instance is null.</returns>
+        /// <param name="random">The <see cref="System.Random" /> instance used to generate random values.</param>
+        /// <param name="tolerance">The minimum length threshold that a generated vector must exceed before being normalized, defaulting to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A unit <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> representing the normalized direction of the generated vector, or <see langword="null" /> if the <paramref name="random" /> instance is null.</returns>
         public static Vector2D? Vector2D(System.Random random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (random == null)
@@ -44,12 +44,12 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> based on the provided <see cref="T:DiGi.Geometry.Planar.Classes.BoundingBox2D" />, using a random seed and a specified distance tolerance.
+        /// Generates a <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> based on the provided <see cref="DiGi.Geometry.Planar.Classes.BoundingBox2D" />, using a random seed and a specified distance tolerance.
         /// </summary>
-        /// <param name="boundingBox2D">The <see cref="T:DiGi.Geometry.Planar.Classes.BoundingBox2D" /> used to define the area for vector generation.</param>
+        /// <param name="boundingBox2D">The <see cref="DiGi.Geometry.Planar.Classes.BoundingBox2D" /> used to define the area for vector generation.</param>
         /// <param name="seed">An <see cref="System.Int32" /> value used as a seed for the random number generator.</param>
-        /// <param name="tolerance">A <see cref="System.Double" /> value representing the distance tolerance, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> if the <paramref name="boundingBox2D" /> is not null; otherwise, null.</returns>
+        /// <param name="tolerance">A <see cref="System.Double" /> value representing the distance tolerance, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> if the <paramref name="boundingBox2D" /> is not null; otherwise, null.</returns>
         public static Vector2D? Vector2D(BoundingBox2D? boundingBox2D, int seed = -1, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox2D == null)
@@ -63,12 +63,12 @@ namespace DiGi.Geometry.Planar.Random
         }
 
         /// <summary>
-        /// Generates a <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> based on the provided <see cref="T:DiGi.Geometry.Planar.Classes.BoundingBox2D" />, using a random generator and a specified tolerance.
+        /// Generates a <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> based on the provided <see cref="DiGi.Geometry.Planar.Classes.BoundingBox2D" />, using a random generator and a specified tolerance.
         /// </summary>
-        /// <param name="boundingBox2D">The <see cref="T:DiGi.Geometry.Planar.Classes.BoundingBox2D" /> used to define the spatial bounds for vector generation.</param>
+        /// <param name="boundingBox2D">The <see cref="DiGi.Geometry.Planar.Classes.BoundingBox2D" /> used to define the spatial bounds for vector generation.</param>
         /// <param name="random">The <see cref="System.Random" /> instance used to generate random values within the ranges of the bounding box.</param>
-        /// <param name="tolerance">The <see cref="double" /> tolerance value, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Planar.Classes.Vector2D" /> if the <paramref name="boundingBox2D" /> and its minimum and maximum corners are not null; otherwise, <see langword="null" />.</returns>
+        /// <param name="tolerance">The <see cref="double" /> tolerance value, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Planar.Classes.Vector2D" /> if the <paramref name="boundingBox2D" /> and its minimum and maximum corners are not null; otherwise, <see langword="null" />.</returns>
         public static Vector2D? Vector2D(BoundingBox2D? boundingBox2D, System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox2D == null)

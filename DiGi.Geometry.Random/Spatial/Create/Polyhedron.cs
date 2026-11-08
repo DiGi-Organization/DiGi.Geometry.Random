@@ -28,13 +28,13 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Generates a random <see cref="T:DiGi.Geometry.Spatial.Classes.Polyhedron" /> based on a provided <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" />, using a randomly generated polygonal face and an extrusion length derived from the bounding box constraints.
+        /// Generates a random <see cref="DiGi.Geometry.Spatial.Classes.Polyhedron" /> based on a provided <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" />, using a randomly generated polygonal face and an extrusion length derived from the bounding box constraints.
         /// </summary>
-        /// <param name="boundingBox3D">The <see cref="T:DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for the generation process.</param>
+        /// <param name="boundingBox3D">The <see cref="DiGi.Geometry.Spatial.Classes.BoundingBox3D" /> that defines the spatial boundaries for the generation process.</param>
         /// <param name="pointCount">An <see cref="System.Int32" /> specifying the number of points used to create the base polygonal face.</param>
         /// <param name="random">A <see cref="System.Random" /> instance used to randomize the face generation and the final extrusion length.</param>
-        /// <param name="tolerance">A <see cref="System.Double" /> representing the distance tolerance for geometric operations, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.Polyhedron" /> if the object was successfully created; otherwise, <c>null</c>.</returns>
+        /// <param name="tolerance">A <see cref="System.Double" /> representing the distance tolerance for geometric operations, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.Polyhedron" /> if the object was successfully created; otherwise, <c>null</c>.</returns>
         public static Polyhedron? Polyhedron(BoundingBox3D? boundingBox3D, int pointCount, System.Random random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (boundingBox3D == null || random == null)
@@ -149,15 +149,15 @@ namespace DiGi.Geometry.Spatial.Random
         }
 
         /// <summary>
-        /// Creates a <see cref="T:DiGi.Geometry.Spatial.Classes.Polyhedron" /> within a three-dimensional space defined by the specified spatial ranges.
+        /// Creates a <see cref="DiGi.Geometry.Spatial.Classes.Polyhedron" /> within a three-dimensional space defined by the specified spatial ranges.
         /// </summary>
-        /// <param name="x">The <see cref="T:DiGi.Core.Classes.Range`1" /> of <see cref="T:System.Double" /> defining the extent along the X-axis.</param>
-        /// <param name="y">The <see cref="T:DiGi.Core.Classes.Range`1" /> of <see cref="T:System.Double" /> defining the extent along the Y-axis.</param>
-        /// <param name="z">The <see cref="T:DiGi.Core.Classes.Range`1" /> of <see cref="T:System.Double" /> defining the extent along the Z-axis.</param>
-        /// <param name="pointCount">The number of points to be used in the generation of the <see cref="T:DiGi.Geometry.Spatial.Classes.Polyhedron" />.</param>
-        /// <param name="random">An instance of <see cref="T:System.Random" /> used for random point distribution.</param>
-        /// <param name="tolerance">The distance tolerance used for geometric operations, which defaults to <see cref="F:DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
-        /// <returns>A <see cref="T:DiGi.Geometry.Spatial.Classes.Polyhedron" /> if the spatial ranges and <paramref name="random" /> are not null; otherwise, null.</returns>
+        /// <param name="x">The <see cref="DiGi.Core.Classes.Range{T}" /> of <see cref="System.Double" /> defining the extent along the X-axis.</param>
+        /// <param name="y">The <see cref="DiGi.Core.Classes.Range{T}" /> of <see cref="System.Double" /> defining the extent along the Y-axis.</param>
+        /// <param name="z">The <see cref="DiGi.Core.Classes.Range{T}" /> of <see cref="System.Double" /> defining the extent along the Z-axis.</param>
+        /// <param name="pointCount">The number of points to be used in the generation of the <see cref="DiGi.Geometry.Spatial.Classes.Polyhedron" />.</param>
+        /// <param name="random">An instance of <see cref="System.Random" /> used for random point distribution.</param>
+        /// <param name="tolerance">The distance tolerance used for geometric operations, which defaults to <see cref="DiGi.Core.Constants.Tolerance.MacroDistance" />.</param>
+        /// <returns>A <see cref="DiGi.Geometry.Spatial.Classes.Polyhedron" /> if the spatial ranges and <paramref name="random" /> are not null; otherwise, null.</returns>
         public static Polyhedron? Polyhedron(Range<double>? x, Range<double>? y, Range<double>? z, int pointCount, System.Random? random, double tolerance = DiGi.Core.Constants.Tolerance.MacroDistance)
         {
             if (x == null || y == null || z == null || random == null)
